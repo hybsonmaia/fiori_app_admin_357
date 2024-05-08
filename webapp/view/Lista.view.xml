@@ -1,0 +1,119 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns:semantic="sap.f.semantic" xmlns:fb="sap.ui.comp.filterbar" controllerName="br.com.gestao.fioriappreport357.controller.Lista" displayBlock="true">
+    <m:Shell id="shell">
+        <m:App id="id">
+            <m:pages>
+                <m:Page id="page" title="{i18n>title}">
+                    <m:content>
+                        <semantic:SemanticPage id="pageList">
+
+                            <semantic:titleHeading>
+                                <m:Title text="{i18n>headingTitle}" id="titlePageList"/>
+                            </semantic:titleHeading>
+
+                            <semantic:headerContent>
+                                <fb:FilterBar id="filterBar" persistencyKey="myPersKey" useToolbar="false" search="onSearch" showGoOnFB="true">
+                                    <fb:filterGroupItems>
+                                        <fb:FilterGroupItem label="{i18n>fgItemProdId}" name="Produto ID" labelTooltip="{i18n>fgItemProdTT}" visibleInFilterBar="true" groupTitle="{i18n>fgGroupTitle}" groupName="Principal" id="fgiProdutoId">
+                                            <fb:control>
+                                                <m:Input width="100%" id="inputProdutoId" placeholder="{i18n>fgItemProdTT}"/>
+                                            </fb:control>
+                                        </fb:FilterGroupItem>
+                                        <fb:FilterGroupItem label="Nome Produto" name="Nome Produto" labelTooltip="{i18n>fgItemNomeTT}" visibleInFilterBar="true" groupTitle="{i18n>fgGroupTitle}" groupName="Principal" id="fgiProdutoNome">
+                                            <fb:control>
+                                                <m:Input width="100%" id="inputProdutoNome" placeholder="{i18n>fgItemNomeTT}"/>
+                                            </fb:control>
+                                        </fb:FilterGroupItem>
+                                    </fb:filterGroupItems>
+                                </fb:FilterBar>
+                            </semantic:headerContent>
+
+                            <semantic:titleMainAction>
+                            </semantic:titleMainAction>
+
+                            <semantic:titleCustomTextActions>
+                            </semantic:titleCustomTextActions>
+
+                            <semantic:titleCustomIconActions>
+                            </semantic:titleCustomIconActions>
+
+                            <semantic:content>
+                                <m:Table noDataText="{i18n>tbNoData}" id="tableProdutos" items="{ path: '/Produtos', parameters:{expand: 'to_Category' } }">
+                                    <m:columns>
+                                        <m:Column id="column0">
+                                            <m:header>
+                                                <m:Label text="{i18n>tbLogo}" id="label0"/>
+                                            </m:header>
+                                        </m:Column>
+                                        <m:Column id="column1">
+                                            <m:header>
+                                                <m:Label text="{i18n>tbIdProduto}" id="label1"/>
+                                            </m:header>
+                                        </m:Column>
+                                        <m:Column id="column2" width="16em">
+                                            <m:header>
+                                                <m:Label text="{i18n>tbNome}" id="label2"/>
+                                            </m:header>
+                                        </m:Column>
+                                        <m:Column id="column0_1712668627878">
+                                            <m:header>
+                                                <m:Text text="{i18n>tbCategoria}" id="text9"/>
+                                            </m:header>
+                                        </m:Column>
+                                        <m:Column id="column1_1712668634059" width="8em">
+                                            <m:header>
+                                                <m:Text text="{i18n>tbIdFornecedor}" id="text10"/>
+                                            </m:header>
+                                        </m:Column>
+                                        <m:Column id="column2_1712668637992" hAlign="Center">
+                                            <m:header>
+                                                <m:Text text="{i18n>tbUnidMedida}" id="text11"/>
+                                            </m:header>
+                                        </m:Column>
+                                        <m:Column id="column3">
+                                            <m:header>
+                                                <m:Text text="{i18n>tbPreco}" id="text12"/>
+                                            </m:header>
+                                        </m:Column>
+                                        <m:Column id="column4" width="10em">
+                                            <m:header>
+                                                <m:Text text="{i18n>tbStatus}" id="text13"/>
+                                            </m:header>
+                                        </m:Column>
+                                        <m:Column id="column5" hAlign="Center">
+                                            <m:header>
+                                                <m:Text text="{i18n>tbDataCriacao}" id="text14"/>
+                                            </m:header>
+                                        </m:Column>
+                                    </m:columns>
+                                    <m:items>
+                                        <m:ColumnListItem press="onSelectedItem" type="Active" id="item0">
+                                            <m:cells>
+                                                <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://product" size="3rem" id="icon0"/>
+                                                <Text xmlns="sap.m" text="{ProductId}" id="text16"/>
+                                                <ObjectIdentifier xmlns="sap.m" title="{Name}" text="{Description}" id="identifier0"/>
+                                                <Text xmlns="sap.m" text="{to_Category/Description}" id="text19"/>
+                                                <Text xmlns="sap.m" text="{SupplierId}" id="text20"/>
+                                                <Text xmlns="sap.m" text="{MeasureUnit}" id="text21"/>
+                                                <ObjectNumber xmlns="sap.m" number="{ parts:[ {path:'Price'}, {path:'CurrencyCode'} ], type: 'sap.ui.model.type.Currency', formatOptions:{showMeasure: false} }" unit="{CurrencyCode}" id="number0" state="Success"/>
+                                                <ObjectStatus xmlns="sap.m" text="{ path: 'Status', formatter:'.statusProduto' }" state="{ path: 'Status', formatter: '.stateProduto' }" id="status0" icon="{ path: 'Status', formatter: '.iconProduto' }"/>
+                                                <Text xmlns="sap.m" text="{ path: 'CreateDat', formatter:'.date' }" id="text23"/>
+                                            </m:cells>
+                                        </m:ColumnListItem>
+                                    </m:items>
+                                </m:Table>
+                            </semantic:content>
+
+                            <semantic:footerCustomActions>
+                            </semantic:footerCustomActions>
+
+                            <semantic:titleSnappedContent>
+                                <Title xmlns="sap.m" text="{i18n>tscTitleRelatorio}" id="title0"/>
+                            </semantic:titleSnappedContent>
+
+                        </semantic:SemanticPage>
+                    </m:content>
+                </m:Page>
+            </m:pages>
+        </m:App>
+    </m:Shell>
+</mvc:View>

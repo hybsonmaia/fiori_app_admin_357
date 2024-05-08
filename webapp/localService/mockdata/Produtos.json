@@ -1,0 +1,157 @@
+[
+    {
+        "ProductId": "1",
+        "Name": "Name1",
+        "Description": "Description1",
+        "Category": "CNTB",
+        "SupplierId": "SupplierI1",
+        "MeasureUnit": "CM",
+        "Weightmeasure": 7850377864.67,
+        "WeightUnit": "We1",
+        "Price": 416.31,
+        "CurrencyCode": "BRL",
+        "Width": 2906236283.015,
+        "Depth": 9953060548.286,
+        "Height": 5817597603.891,
+        "DimUnit": "Di1",
+        "CreateDat": "/Date(242910855000)/",
+        "ChangeDat": "/Date(229804706000)/",
+        "Status": "S1",
+        "UserCreate": "UserCreate1",
+        "UserUpdate": "UserUpdate1",
+        "Suppliername": "Suppliername1",
+        "__metadata": {
+            "uri": "/Produtos('1')",
+            "type": "cds_zsd_producao_357.ProdutosType"
+        },
+        "to_Category": {
+            "__deferred": {
+                "uri": "/Produtos('1')/to_Category"
+            }
+        }
+    },
+    {
+        "ProductId": "2",
+        "Name": "Name2",
+        "Description": "Description2",
+        "Category": "CPDA",
+        "SupplierId": "SupplierI2",
+        "MeasureUnit": "PCT",
+        "Weightmeasure": 4438696724.828,
+        "WeightUnit": "We2",
+        "Price": 5101.49,
+        "CurrencyCode": "BRL",
+        "Width": 1093855674.844,
+        "Depth": 5816505902.912,
+        "Height": 7181750638.41,
+        "DimUnit": "Di2",
+        "CreateDat": "/Date(805035035000)/",
+        "ChangeDat": "/Date(369786600000)/",
+        "Status": "S2",
+        "UserCreate": "UserCreate2",
+        "UserUpdate": "UserUpdate2",
+        "Suppliername": "Suppliername2",
+        "__metadata": {
+            "uri": "/Produtos('2')",
+            "type": "cds_zsd_producao_357.ProdutosType"
+        },
+        "to_Category": {
+            "__deferred": {
+                "uri": "/Produtos('2')/to_Category"
+            }
+        }
+    },
+    {
+        "ProductId": "3",
+        "Name": "Name3",
+        "Description": "Description3",
+        "Category": "CPDA",
+        "SupplierId": "SupplierI3",
+        "MeasureUnit": "PCT",
+        "Weightmeasure": 5577806336.805,
+        "WeightUnit": "We3",
+        "Price": 8078.05,
+        "CurrencyCode": "BRL",
+        "Width": 8046413550.619,
+        "Depth": 1994168725.796,
+        "Height": 3118363542.016,
+        "DimUnit": "Di3",
+        "CreateDat": "/Date(174249733000)/",
+        "ChangeDat": "/Date(718257213000)/",
+        "Status": "S3",
+        "UserCreate": "UserCreate3",
+        "UserUpdate": "UserUpdate3",
+        "Suppliername": "Suppliername3",
+        "__metadata": {
+            "uri": "/Produtos('3')",
+            "type": "cds_zsd_producao_357.ProdutosType"
+        },
+        "to_Category": {
+            "__deferred": {
+                "uri": "/Produtos('3')/to_Category"
+            }
+        }
+    },
+    {
+        "ProductId": "4",
+        "Name": "Name4",
+        "Description": "Description4",
+        "Category": "CSCR",
+        "SupplierId": "SupplierI4",
+        "MeasureUnit": "PCT",
+        "Weightmeasure": 5569557989.947,
+        "WeightUnit": "We4",
+        "Price": 7495.46,
+        "CurrencyCode": "BRL",
+        "Width": 7047961193.602,
+        "Depth": 7952617523.26,
+        "Height": 2262392654.083,
+        "DimUnit": "Di4",
+        "CreateDat": "/Date(777629751000)/",
+        "ChangeDat": "/Date(228114776000)/",
+        "Status": "S1",
+        "UserCreate": "UserCreate4",
+        "UserUpdate": "UserUpdate4",
+        "Suppliername": "Suppliername4",
+        "__metadata": {
+            "uri": "/Produtos('4')",
+            "type": "cds_zsd_producao_357.ProdutosType"
+        },
+        "to_Category": {
+            "__deferred": {
+                "uri": "/Produtos('4')/to_Category"
+            }
+        }
+    },
+    {
+        "ProductId": "5",
+        "Name": "Name5",
+        "Description": "Description5",
+        "Category": "CSCR",
+        "SupplierId": "SupplierI5",
+        "MeasureUnit": "PCT",
+        "Weightmeasure": 6901467379.648,
+        "WeightUnit": "We5",
+        "Price": 3189.11,
+        "CurrencyCode": "BRL",
+        "Width": 9833326747.175,
+        "Depth": 5656488344.538,
+        "Height": 6919191281.776,
+        "DimUnit": "Di5",
+        "CreateDat": "/Date(324425988000)/",
+        "ChangeDat": "/Date(990413434000)/",
+        "Status": "S2",
+        "UserCreate": "UserCreate5",
+        "UserUpdate": "UserUpdate5",
+        "Suppliername": "Suppliername5",
+        "__metadata": {
+            "uri": "/Produtos('5')",
+            "type": "cds_zsd_producao_357.ProdutosType"
+        },
+        "to_Category": {
+            "__deferred": {
+                "uri": "/Produtos('5')/to_Category"
+            }
+        }
+    }
+]
