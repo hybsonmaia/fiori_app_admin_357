@@ -1,4 +1,4 @@
-<mvc:View controllerName="br.com.gestao.fioriappreport357.controller.Detalhes"
+<mvc:View controllerName="br.com.gestao.fioriappadmin357.controller.Detalhes"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.uxap"
@@ -64,7 +64,7 @@
                 <m:VBox id="_IDGenVBox4" class="sapUiSmallMarginEnd sapUiSmallMarginBotton">
                     <m:Title id="_IDGenTitle6" text="{i18n>headerStatus}" class="sapUiTinyMarginBotton"/>
                     <m:ObjectStatus id="_IDGenObjectStatus1" class="sapMObjectStatusLarge"
-                        xmlns="sap.m" text="{ path: 'Status', formatter:'.statusProduto' }" state="{ path: 'Status', formatter: '.stateProduto' }" icon="{ path: 'Status', formatter: '.iconProduto' }"/>
+                        xmlns="sap.m" text="{ path: 'Status', formatter:'.objFormatter.statusProduto' }" state="{ path: 'Status', formatter: '.objFormatter.stateProduto' }" icon="{ path: 'Status', formatter: '.objFormatter.iconProduto' }"/>
                 </m:VBox>
                 <m:VBox id="_IDGenVBox5" class="sapUiSmallMarginEnd sapUiSmallMarginBotton">
                     <m:Title id="_IDGenTitle7" text="{i18n>headerPrice}" class="sapUiTinyMarginBotton"/>
@@ -79,7 +79,7 @@
                     <m:HBox id="_IDGenHBox5">
                         <m:Label id="_IDGenLabel6" text="{i18n>headerCreatedOn}" class="sapUiSmallMarginEnd"/>
                         <m:Link id="_IDGenLink7"
-                            xmlns="sap.m" text="{ path: 'CreateDat', formatter:'.date' }" />
+                            xmlns="sap.m" text="{ path: 'CreateDat', formatter:'.objFormatter.date' }" />
                     </m:HBox>
                     <m:HBox id="_IDGenHBox6">
                         <m:Label id="_IDGenLabel7" text="{i18n>headerChangedBy}" class="sapUiSmallMarginEnd"/>
@@ -87,7 +87,7 @@
                     </m:HBox>
                     <m:HBox id="_IDGenHBox7">
                         <m:Label id="_IDGenLabel8" text="{i18n>headerChangedOn}" class="sapUiSmallMarginEnd"/>
-                        <m:Link id="_IDGenLink9" text="{ path: 'ChangeDat', formatter:'.date' }" />
+                        <m:Link id="_IDGenLink9" text="{ path: 'ChangeDat', formatter:'.objFormatter.date' }" />
                     </m:HBox>
                 </m:VBox>
             </m:HeaderContainer>
@@ -120,15 +120,15 @@
                                     <m:Label id="_IDGenLabel11" text="{i18n>sfMeasureunit}"/>
                                     <m:Text id="_IDGenText7" text="{MeasureUnit}" class="sapMObjectNumberMedium"/>
                                     <m:Label id="_IDGenLabel12" text="{i18n>sfWeightmeasure}"/>
-                                    <m:Text id="_IDGenText8" text="{ path:'Weightmeasure', formatter:'.floatNumber'} " class="sapMObjectNumberMedium"/>
+                                    <m:Text id="_IDGenText8" text="{ path:'Weightmeasure', formatter:'.objFormatter.floatNumber'} " class="sapMObjectNumberMedium"/>
                                     <m:Label id="_IDGenLabel13" text="{i18n>sfWeightunit}"/>
                                     <m:Text id="_IDGenText9" text="{WeightUnit}" class="sapMObjectNumberMedium"/>
                                     <m:Label id="_IDGenLabel14" text="{i18n>sfWidth}"/>
-                                    <m:Text id="_IDGenText10" text="{ path:'Width', formatter:'.floatNumber'}" class="sapMObjectNumberMedium"/>
+                                    <m:Text id="_IDGenText10" text="{ path:'Width', formatter:'.objFormatter.floatNumber'}" class="sapMObjectNumberMedium"/>
                                     <m:Label id="_IDGenLabel15" text="{i18n>sfDepth}"/>
-                                    <m:Text id="_IDGenText11" text="{ path:'Depth', formatter:'.floatNumber'}" class="sapMObjectNumberMedium"/>
+                                    <m:Text id="_IDGenText11" text="{ path:'Depth', formatter:'.objFormatter.floatNumber'}" class="sapMObjectNumberMedium"/>
                                     <m:Label id="_IDGenLabel16" text="{i18n>sfHeight}"/>
-                                    <m:Text id="_IDGenText12" text="{ path:'Height', formatter:'.floatNumber'}" class="sapMObjectNumberMedium"/>
+                                    <m:Text id="_IDGenText12" text="{ path:'Height', formatter:'.objFormatter.floatNumber'}" class="sapMObjectNumberMedium"/>
                                     <m:Label id="_IDGenLabel17" text="{i18n>sfDimunit}"/>
                                     <m:Text id="_IDGenText13" text="{DimUnit}" class="sapMObjectNumberMedium"/>
                                 </form:content>

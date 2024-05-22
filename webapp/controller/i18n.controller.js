@@ -8,7 +8,7 @@ sap.ui.define([
     function(Controller, MessageBox) {
         "use strict";
 
-        return Controller.extend("br.com.gestao.fioriappreport357.controller.i18n", {
+        return Controller.extend("br.com.gestao.fioriappadmin357.controller.i18n", {
             onInit: function() {
 
             },

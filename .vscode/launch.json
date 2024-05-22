@@ -16,7 +16,7 @@
             ],
             "args": [
                 "--open",
-                "test/flpSandbox.html#brcomgestaofioriappreport357-display"
+                "test/flpSandbox.html#brcomgestaofioriappadmin357-display"
             ],
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
@@ -45,7 +45,7 @@
                 "--config",
                 "./ui5-mock.yaml",
                 "--open",
-                "test/flpSandbox.html#brcomgestaofioriappreport357-display"
+                "test/flpSandbox.html#brcomgestaofioriappadmin357-display"
             ],
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
@@ -73,7 +73,7 @@
                 "--config",
                 "./ui5-local.yaml",
                 "--open",
-                "test/flpSandbox.html#brcomgestaofioriappreport357-display"
+                "test/flpSandbox.html#brcomgestaofioriappadmin357-display"
             ],
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",

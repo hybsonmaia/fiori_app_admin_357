@@ -40,7 +40,7 @@ sap.ui.define([
 								"tileType": "sap.ushell.ui.tile.StaticTile",
 								"properties": {
 									"title": "Fiori Report",
-									"targetURL": "#brcomgestaofioriappreport357-display"
+									"targetURL": "#brcomgestaofioriappadmin357-display"
 								}
 							}]
 						}]
@@ -51,8 +51,8 @@ sap.ui.define([
 				"adapter": {
 					"config": {
 						"inbounds": {
-							"brcomgestaofioriappreport357-display": {
-								"semanticObject": "brcomgestaofioriappreport357",
+							"brcomgestaofioriappadmin357-display": {
+								"semanticObject": "brcomgestaofioriappadmin357",
 								"action": "display",
 								"description": "Fiori App Gestão Report",
 								"title": "Fiori Report",
@@ -61,8 +61,8 @@ sap.ui.define([
 								},
 								"resolutionResult": {
 									"applicationType": "SAPUI5",
-									"additionalInformation": "SAPUI5.Component=br.com.gestao.fioriappreport357",
-									"url": sap.ui.require.toUrl("br/com/gestao/fioriappreport357")
+									"additionalInformation": "SAPUI5.Component=br.com.gestao.fioriappadmin357",
+									"url": sap.ui.require.toUrl("br/com/gestao/fioriappadmin357")
 								}
 							}
 						}

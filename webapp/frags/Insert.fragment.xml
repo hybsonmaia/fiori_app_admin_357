@@ -1,0 +1,47 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+
+    <Dialog id="insertDialog" title="{i18n>titleInsert}" resizable="false" draggable="false" contentWidth="37%">
+        <content>
+
+            <form:SimpleForm maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="1" emptySpanM="1" columnsL="2" columnsM="2" id="form00">
+                <form:title>
+                    <core:Title text="Title" id="title6"/>
+                </form:title>
+                <form:content>
+
+                    <Label text="Label 1" id="label00"/>
+                    <Input width="100%" id="input00"/>
+
+                    <Input width="100%" id="input01"/>
+
+                    <Label text="Label 2" id="label02"/>
+                    <Input width="100%" id="input02"/>
+
+                </form:content>
+            </form:SimpleForm>
+
+            <form:SimpleForm maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="1" emptySpanM="1" columnsL="2" columnsM="2" id="form01">
+                <form:title>
+                    <core:Title text="Title" id="title07"/>
+                </form:title>
+                <form:content>
+
+                    <Label text="Label 1" id="label03"/>
+                    <Input width="100%" id="input03"/>
+
+                    <Input width="100%" id="input04"/>
+
+                    <Label text="Label 2" id="label05"/>
+                    <Input width="100%" id="input05"/>
+
+                </form:content>
+            </form:SimpleForm>
+
+        </content>
+    <buttons>
+        <Button xmlns="sap.m" text="Button" id="button00"/>
+        <Button xmlns="sap.m" text="Button" id="button01"/>
+    </buttons>
+    </Dialog>
+
+</core:FragmentDefinition>

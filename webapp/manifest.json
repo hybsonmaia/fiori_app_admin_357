@@ -1,7 +1,7 @@
 {
     "_version": "1.59.0",
     "sap.app": {
-        "id": "br.com.gestao.fioriappreport357",
+        "id": "br.com.gestao.fioriappadmin357",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -69,7 +69,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "br.com.gestao.fioriappreport357.i18n.i18n"
+                    "bundleName": "br.com.gestao.fioriappadmin357.i18n.i18n"
                 }
             },
             "": {
@@ -90,7 +90,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "async": true,
-                "viewPath": "br.com.gestao.fioriappreport357.view",
+                "viewPath": "br.com.gestao.fioriappadmin357.view",
                 "controlAggregation": "pages",
                 "controlId": "appID",
                 "clearControlAggregation": false,
@@ -160,7 +160,7 @@
             }
         },
         "rootView": {
-            "viewName": "br.com.gestao.fioriappreport357.view.App",
+            "viewName": "br.com.gestao.fioriappadmin357.view.App",
             "type": "XML",
             "async": true,
             "id": "App"

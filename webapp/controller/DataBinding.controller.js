@@ -9,7 +9,7 @@ sap.ui.define([
     function(Controller, JSONModel, SimpleForm) {
         "use strict";
 
-        return Controller.extend("br.com.gestao.fioriappreport357.controller.DataBinding", {
+        return Controller.extend("br.com.gestao.fioriappadmin357.controller.DataBinding", {
 
             onInit: function() {
 

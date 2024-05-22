@@ -11,7 +11,7 @@ sap.ui.define([
     function (Controller, Label, Input, TextArea, SimpleForm) {
         "use strict";
 
-        return Controller.extend("br.com.gestao.fioriappreport357.controller.Objetos", {
+        return Controller.extend("br.com.gestao.fioriappadmin357.controller.Objetos", {
             onInit: function () {
 
             },
